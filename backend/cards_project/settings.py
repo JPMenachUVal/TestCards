@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'cards',          # Añadido - nuestra app
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+]
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',    # Añadido - debe estar al inicio
     'django.middleware.security.SecurityMiddleware',
